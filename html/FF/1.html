@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style contenteditable>
+      style {
+        display: block;
+        border: 1px solid red;
+      }
+      .middle {
+        background: black;
+        color: white;
+      }
+      .bordered {
+        border: 10px solid red;
+      }
+      #xxx {
+        border: 10px solid black;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    </style>
+    <header id="xxx" style="border: 10px solid green;" title="完整的內容">
+      顶部广告顶部广告顶部广告顶部广告顶部广告顶部广告顶部广告顶部广告
+    </header>
+    <div class="middle bordered" contenteditable>
+      <main>
+        <h1>文章标题</h1>
+        <section>
+          <h2>第一章</h2>
+          <p>这是一段话这是一段话这是一段话这是一段话这是一段话</p>
+
+          <section>
+            <h3>1.1节</h3>
+            <p>一段话</p>
+          </section>
+          <section>
+            <h3>1.2节</h3>
+            <p>一段话</p>
+          </section>
+        </section>
+      </main>
+      <aside>
+        参考资料 1 2 3
+      </aside>
+    </div>
+    <footer hidden>&copy; 版权所有</footer>
+  </body>
+</html>
