@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+ol {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
+.header {
+  display: flex;
+  /* border: 1px solid black; */
+  
+  justify-content: space-between;
+  align-items: center;
+  background: gray;
+  padding: 4px 0;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo>img {
+  height: 26px;
+  vertical-align: top;
+  /* border: 1px solid red; */
+}
+ul {
+  /* 作用同 justify-content: space-between; */
+  /* margin-left: auto; */
+  
+  display: flex;
+  /* border: 1px solid green; */
+}
+ul>li {
+  /* border: 1px solid red; */
+  /* line-height: 32px; */
+  
+  padding: 4px;
+}
+.content {
+  display: flex;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.content>aside {
+  background: #000;
+  width: 200px;
+}
+.content>main {
+  background: #666;
+  height: 400px;
+  flex-grow: 1;
+}
+.content>.ad {
+  background: #999;
+  width: 100px;
+}
+.imageList {
+  /* border: 1px solid red; */
+  
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+.imageList>.x {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -12px;
+}
+.image {
+  width: 191px;
+  height: 191px;
+  background: grey;
+  border: 1px solid red;
+  margin-right: 12px;
+  margin-bottom: 10px;
+}
