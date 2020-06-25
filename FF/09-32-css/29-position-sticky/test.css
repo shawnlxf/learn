@@ -1,0 +1,23 @@
+.container {
+  border: 1px solid red;
+
+  position: relative;
+  padding: 20px;
+}
+* {
+  box-sizing: border-box;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.sticky {
+  position: sticky;
+  /* position: -webkit-sticky; */
+  top: 0;
+
+  border: 1px solid green;
+  background: green;
+}

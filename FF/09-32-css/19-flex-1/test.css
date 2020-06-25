@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  border: 1px solid red;
+  /* 默认为row */
+  /* flex-direction: row; */
+  /* 默认为nowrap */
+  /* flex-wrap: wrap; */
+  /* 默认为flex-start */
+  /* justify-content: space-between; */
+  /* align-items 默认为stretch */
+  /* height: 400px; */
+  /* 默认为stretch */
+  /* align-content: stretch; */
+}
+.item {
+  border: 1px solid green;
+  /* width: 150px; */
+  height: 50px;
+}
+
+.item:first-child {
+  height: 200px;
+}
+
+.item:nth-child(2) {
+  height: 150px;
+}
+
+.item:nth-child(3) {
+  height: 100px;
+}
+
+.item:nth-child(4) {
+  height: 50px;
+  align-self: flex-end;
+}

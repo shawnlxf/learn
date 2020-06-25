@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+.heart {
+  margin: 100px;
+  position: relative;
+  display: inline-block;
+  transform: rotate(45deg);
+  transition: all 1s;
+}
+
+.heart:hover {
+  transform: rotate(45deg) scale(1.2);
+}
+
+.square {
+  background: hotpink;
+  width: 50px;
+  height: 50px;
+  position: aboslute;
+}
+
+.round1 {
+  background: hotpink;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  right: 50%;
+}
+
+.round2 {
+  background: hotpink;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 50%;
+}

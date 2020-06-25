@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+ol {
+  /* padding: 20px; */
+
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.logo {
+  background: gray;
+  display: inline-block;
+  /* 尽量压窄自己 */
+  float: left;
+  margin-top: 8px;
+  margin-left: 10px;
+}
+.logo > img {
+  height: 26px;
+  /* border: 1px solid red; */
+
+  vertical-align: top;
+  /* 或者 middle */
+  /* 去掉图片下面的背景色 */
+}
+.nav {
+  float: right;
+  /* margin-left: 20px; */
+}
+ul > li {
+  float: left;
+  /* border: 1px solid red; */
+
+  padding: 4px 0.5em;
+  line-height: 32px;
+}
+ul {
+  /* border: 1px solid green; */
+
+  display: inline-block;
+  /* 尽量压窄自己 */
+}
+header {
+  /* border: 1px solid blue; */
+
+  background: gray;
+  color: white;
+}
+.content {
+  /* border: 1px solid red; */
+
+  outline: 1px solid red;
+  width: 800px;
+  /* margin: 0 auto; */
+  /* 左右居中 */
+
+  margin-left: auto;
+  margin-right: auto;
+  /* 写法比上面一种更好 */
+}
+.content > aside {
+  width: 200px;
+  /* border: 1px solid green; */
+
+  height: 300px;
+  float: left;
+  background: #999;
+}
+.content > main {
+  /* border: 1px solid purple; */
+
+  height: 300px;
+  width: 500px;
+  float: left;
+  background: #ccc;
+}
+.content > .ad {
+  /* border: 1px solid black; */
+
+  width: 100px;
+  height: 300px;
+  float: left;
+  background: #000;
+}
+.imageList {
+  outline: 1px solid green;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+.imageList > .x > .image {
+  width: 191px;
+  height: 191px;
+  background: #000;
+  border: 1px solid red;
+  float: left;
+  margin-bottom: 10px;
+  margin-right: 12px;
+}
+.imageList > .x {
+  margin-right: -12px;
+}
